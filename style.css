@@ -1,0 +1,455 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+.navbar{
+    animation: transitionIn 0.75s;
+}
+
+.container{
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  /* Navbar styles */
+  .navbar {
+    background-color: #f1f1f1;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin-left: 65px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  flex-grow: 1; /* Distribute available space evenly among the items */
+  justify-content: center; /* Align the items horizontally in the center */
+}
+
+.navbar-nav li {
+  margin: 0 50px; /* Adjust the spacing between the items */
+  position: relative; /* Enable positioning for the pseudo-elements */
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav li:hover{
+  transform: scale(1.1);
+}
+
+.navbar-nav a {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.container{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 90.3%;
+    width: 100%;
+}
+
+/* ... Rest of your existing CSS rules ... */
+
+.navbar-nav {
+    margin-right: auto; /* Pushes the search box and shopping cart to the right */
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 150px; /* Add top padding to the container to avoid overlap with fixed navbar */
+}
+
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-weight: bold;
+    z-index: 999; /* Ensure the navbar is above other elements */
+}
+
+.contact-form{
+  margin-top: -250px;
+}
+
+.contact-form h1{
+  color: white;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.contact-form input{
+  background-color: white;
+  width: 70%;
+  margin-left: 12%;
+  font-size: 20px;
+  padding: 16px 16px;
+  border-radius: 10px;
+  border-color: black;
+  margin-bottom: 20px;
+}
+
+.contact-form textarea{
+  background-color: white;
+  width: 70%;
+  margin-left: 12%;
+  font-size: 20px;
+  padding: 16px 16px;
+  border-radius: 10px;
+  border-color: black;
+  margin-bottom: 25px;
+}
+
+.contact-form input:focus-within{
+  outline: none;
+  border-color: #5bd183;
+  border-width: 3px;
+}
+
+.contact-form textarea:focus-within{
+  outline: none;
+  border-color: #5bd183;
+  border-width: 3px;
+}
+
+.contact-form button{
+  background-color: #5bd183;
+  border-radius: 20px;
+  border-color: black;
+  font-size: 22px;
+  padding: 10px 18px;
+  text-align: center;
+  display: flex;
+  margin: auto;
+}
+
+.contact-form button:hover{
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.about-section {
+  background-color: #f1f1f1;
+  padding: 60px 0;
+  margin-top: -200px;
+}
+
+.containerA {
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.product-container1 {
+  position: absolute;
+  top: 70px;
+  display: flex;
+  align-items: center;
+  left: 32%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  height: 300px;
+  width: 800px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.discount {
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.shipping-info {
+  font-size: 12px;
+  color: green;
+  margin-top: -10px;
+}
+
+
+.product-container1 img{
+  width: 250px;
+  margin-left: 60px;
+}
+
+.product-container1:hover{
+  transform: scale(1.1);
+}
+
+.product-image-slider {
+  width: 50%;
+  /* Add styles for image slider */
+}
+
+.product-details {
+  width: 50%;
+  padding: 20px;
+}
+
+.product-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  background-color: #5bd183;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.product-image-slider img {
+  max-width: 100%;
+  height: auto;
+}
+
+.left-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #f1f1f1;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover{
+  transform: scale(1.1);
+}
+
+.social-icons a:hover {
+  box-shadow: 2px 2px 2px 2xp #5bd183;
+}
+
+.social-icons img {
+  padding: 3px;
+  margin-bottom: -10px; /* Adjust the spacing between icons */
+}
+
+.product-container2{
+  position: absolute;
+  top: -40px;
+  display: flex;
+  align-items: center;
+  left: 30%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  height: 150px;
+  width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-container2 h2{
+  font-size: 20px;
+}
+
+.product-container2 img{
+  width: 160px;
+  margin-left: 15px;
+}
+
+.product-container2:hover{
+  transform: scale(1.1);
+}
+
+.product-container3{
+  position: absolute;
+  top: -40px;
+  display: flex;
+  align-items: center;
+  left: 62%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  height: 150px;
+  width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-container3 img{
+  width: 85px;
+  margin-left: 50px;
+}
+
+.product-container3:hover{
+  transform: scale(1.1);
+}
+
+.product-container4{
+  position: absolute;
+  top: 140px;
+  display: flex;
+  align-items: center;
+  left: 30%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  height: 150px;
+  width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-container4 h2{
+  font-size: 16px;
+  width: 500px;
+}
+
+.product-container4:hover{
+  transform: scale(1.1);
+}
+
+.product-container5{
+  position: absolute;
+  top: 140px;
+  display: flex;
+  align-items: center;
+  left: 62%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  height: 150px;
+  width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-container5:hover{
+  transform: scale(1.1);
+}
+
+.product-container6{
+  position: absolute;
+  top: 320px;
+  display: flex;
+  align-items: center;
+  left: 30%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  height: 150px;
+  width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-container6:hover{
+  transform: scale(1.1);
+}
+
+.product-container7{
+  position: absolute;
+  top: 320px;
+  display: flex;
+  align-items: center;
+  left: 62%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  height: 150px;
+  width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-container7:hover{
+  transform: scale(1.1);
+}
+
+.bottom-text {
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.submitbut{
+  transition: transform 0.3s ease;
+}
+
+.submitbut:hover{
+  transform: scale(1.1);
+}
+
+.buy-button{
+  transition: transform 0.3s ease;
+}
+
+.buy-button:hover{
+  transform: scale(1.1); 
+}
