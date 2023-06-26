@@ -10,77 +10,79 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <nav class="navbar">
-    <div class="navbar-brand">
-      <img src="images/logo.png" alt="logo" class="logo">
-    </div>
-    <ul class="navbar-nav">
-      <li><a href="index.html" class="home">Home</a></li>
-      <li><a href="abtus.html" class="abtus">About Us</a></li>
-      <li><a href="contact.html" class="contact">Contact Us</a></li>
-      <li><a href="store.html" class="store">Store</a></li>
-    </ul>
-  </nav>  
-    <div class="container">
-      <div class="left-box">
-        <div class="social-icons">
-          <a href="https://www.instagram.com/stojinators/" class="insta">
-            <img src="images/instagram.png" alt="instagram">
-          </a>
-          <a href="https://www.tiktok.com/@aesthetic0affiliate?lang=en" class="tik">
-            <img src="images/tiktok.png" alt="tiktok">
-          </a>
-          <a href="https://twitter.com/stojinator" class="twit">
-          <img src="images/twitter.png" alt="twitter">
-          </a>
-          <a href="https://www.youtube.com/@Stojinators" class="yout">
-          <img src="images/youtube.png" alt="youtube">
-          </a>
-          <p class="bottom-text">You can support us and be updated when new products are uploaded!</p>
-        </div>
+  <div class="wrapper">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="images/logo.png" alt="logo" class="logo">
       </div>
-      <div class="product-container1">
-        <div class="product-image-slider">
-          <div>
-            <img src="images/laptop1/laptop1.png" alt="image">
-          </div>
-          <div>
-            <img src="images/laptop1/laptop2.png" alt="image">
-          </div>
-          <div>
-            <img src="images/laptop1/laptop3.png" alt="image">
-          </div>
-          <div>
-            <img src="images/laptop1/laptop4.png" alt="image">
+      <ul class="navbar-nav">
+        <li><a href="index.html" class="home">Home</a></li>
+        <li><a href="abtus.html" class="abtus">About Us</a></li>
+        <li><a href="contact.html" class="contact">Contact Us</a></li>
+        <li><a href="store.html" class="store">Store</a></li>
+      </ul>
+    </nav>  
+      <div class="container">
+        <div class="left-box">
+          <div class="social-icons">
+            <a href="https://www.instagram.com/stojinators/" class="insta">
+              <img src="images/instagram.png" alt="instagram">
+            </a>
+            <a href="https://www.tiktok.com/@aesthetic0affiliate?lang=en" class="tik">
+              <img src="images/tiktok.png" alt="tiktok">
+            </a>
+            <a href="https://twitter.com/stojinator" class="twit">
+            <img src="images/twitter.png" alt="twitter">
+            </a>
+            <a href="https://www.youtube.com/@Stojinators" class="yout">
+            <img src="images/youtube.png" alt="youtube">
+            </a>
+            <p class="bottom-text">You can support us and be updated when new products are uploaded!</p>
           </div>
         </div>
-        <div class="product-details">
-          <h2>Gigabyte G7 Gaming Laptop</h2>
-          <p>1.049$ <span class="discount">-13%</span></p>
-          <p class="shipping-info">Free Shipping</p>
-          <a href="https://amzn.to/3CLas7c">
-            <button class="buy-button">Buy Now</button>
-          </a>
+        <div class="product-container1">
+          <div class="product-image-slider">
+            <div>
+              <img src="images/laptop1/laptop1.png" alt="image">
+            </div>
+            <div>
+              <img src="images/laptop1/laptop2.png" alt="image">
+            </div>
+            <div>
+              <img src="images/laptop1/laptop3.png" alt="image">
+            </div>
+            <div>
+              <img src="images/laptop1/laptop4.png" alt="image">
+            </div>
+          </div>
+          <div class="product-details">
+            <h2>Gigabyte G7 Gaming Laptop</h2>
+            <p>1.049$ <span class="discount">-13%</span></p>
+            <p class="shipping-info">Free Shipping</p>
+            <a href="https://amzn.to/3CLas7c">
+              <button class="buy-button">Buy Now</button>
+            </a>
+          </div>
         </div>
-      </div>
-      
-      <script>
-        $(document).ready(function(){
-          $('.product-image-slider').slick({
-            dots: true,
-            arrows: false,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            appendDots: $('.product-image-slider'), // Append the dots to the slider container
-            dotsClass: 'slick-dots custom-dots' // Custom class for styling the dots
+        
+        <script>
+          $(document).ready(function(){
+            $('.product-image-slider').slick({
+              dots: true,
+              arrows: false,
+              autoplay: false,
+              autoplaySpeed: 2000,
+              speed: 500,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              appendDots: $('.product-image-slider'), // Append the dots to the slider container
+              dotsClass: 'slick-dots custom-dots' // Custom class for styling the dots
+            });
           });
-        });
-        </script>                       
+          </script>                       
+      </div>
     </div>
 </body>
 </html>
