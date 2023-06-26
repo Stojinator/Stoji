@@ -57,7 +57,7 @@
 
 .container{
     position: absolute;
-    top: 10%;
+    top: 100%;
     left: 0;
     height: 90.3%;
     width: 100%;
@@ -293,7 +293,7 @@
 
 .product-container2{
   position: absolute;
-  top: -40px;
+  top: 40px;
   display: flex;
   align-items: center;
   left: 30%;
@@ -320,7 +320,7 @@
 
 .product-container3{
   position: absolute;
-  top: -40px;
+  top: 40px;
   display: flex;
   align-items: center;
   left: 62%;
@@ -343,7 +343,7 @@
 
 .product-container4{
   position: absolute;
-  top: 140px;
+  top: 210px;
   display: flex;
   align-items: center;
   left: 30%;
@@ -366,7 +366,7 @@
 
 .product-container5{
   position: absolute;
-  top: 140px;
+  top: 210px;
   display: flex;
   align-items: center;
   left: 62%;
@@ -393,7 +393,7 @@
 
 .product-container6{
   position: absolute;
-  top: 320px;
+  top: 380px;
   display: flex;
   align-items: center;
   left: 30%;
@@ -411,7 +411,7 @@
 
 .product-container7{
   position: absolute;
-  top: 320px;
+  top: 380px;
   display: flex;
   align-items: center;
   left: 62%;
@@ -460,4 +460,8 @@
   .container{
     flex-direction: column;
   }
+}
+
+.about-section{
+  margin-top: -100px;
 }
