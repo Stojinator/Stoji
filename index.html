@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stojinator's</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <nav class="navbar">
     <div class="navbar-brand">
       <img src="images/logo.png" alt="logo" class="logo">
@@ -39,17 +43,44 @@
       </div>
       <div class="product-container1">
         <div class="product-image-slider">
-          <img src="images/pushup.png" alt="image">
+          <div>
+            <img src="images/laptop1/laptop1.png" alt="image">
+          </div>
+          <div>
+            <img src="images/laptop1/laptop2.png" alt="image">
+          </div>
+          <div>
+            <img src="images/laptop1/laptop3.png" alt="image">
+          </div>
+          <div>
+            <img src="images/laptop1/laptop4.png" alt="image">
+          </div>
         </div>
         <div class="product-details">
-          <h2>Cretee Pushups Rack Board</h2>
-          <p>23.99$ <span class="discount">-8%</span></p>
+          <h2>Gigabyte G7 Gaming Laptop</h2>
+          <p>1.049$ <span class="discount">-13%</span></p>
           <p class="shipping-info">Free Shipping</p>
-          <a href="https://www.amazon.de/Cretee-Faltbare-Handgriff-f%C3%BCr-Muskeltraining-Effektiv/dp/B07R4LTL4H?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=pushup&qid=1687701342&sr=8-6&th=1&linkCode=ll1&tag=stojinators-21&linkId=b11f0c713fc72023c3b25bc86fa55211&language=de_DE&ref_=as_li_ss_tl">
+          <a href="https://amzn.to/3CLas7c">
             <button class="buy-button">Buy Now</button>
           </a>
         </div>
-      </div>                   
+      </div>
+      
+      <script>
+        $(document).ready(function(){
+          $('.product-image-slider').slick({
+            dots: true,
+            arrows: false,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            appendDots: $('.product-image-slider'), // Append the dots to the slider container
+            dotsClass: 'slick-dots custom-dots' // Custom class for styling the dots
+          });
+        });
+        </script>                       
     </div>
 </body>
 </html>

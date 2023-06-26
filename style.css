@@ -37,9 +37,9 @@
 }
 
   .logo {
-    width: 120px;
-    height: 120px;
-    margin-left: 65px;
+    width: 200px;
+    height: 90px;
+    margin-left: 30px;
 }
 
 .navbar-nav {
@@ -388,6 +388,15 @@
   width: 400px;
   border-radius: 10px;
   transition: transform 0.3s ease;
+}
+
+.product-container5 img{
+  width: 150px;
+  margin-left: 30px;
+}
+
+.product-container5 h2{
+  font-size: 12px;
 }
 
 .product-container5:hover{
