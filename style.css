@@ -18,13 +18,66 @@
     }
 }
 
+@media screen and (max-width:413px)
+{
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .logo {
+    width: 20%;
+    height: 5%;
+    margin-left: 2%;
+  }
+  .container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 90.3%;
+    width: 100%;
+  }
+  .navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5%;
+    font-weight: bold;
+    z-index: 999;
+  }
+  .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  .product-container1 {
+    position: absolute;
+    top: 70%;
+    display: flex;
+    align-items: center;
+    left: 20%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    height: 300px;
+    width: 800px;
+    border-radius: 10px;
+  }
+}
+
 /* Reset default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-  .logo {
+.logo {
     width: 80%;
     height: 40%;
     margin-left: 37%;
